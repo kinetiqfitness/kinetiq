@@ -1,0 +1,69 @@
+# ---------- Data & models: NEVER in git (use Drive / Hugging Face) ----------
+data/
+datasets/
+clips/
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.tflite
+*.task
+*.onnx
+*.pt
+*.pth
+*.h5
+*.ckpt
+*.npy
+*.npz
+
+# ---------- Secrets ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+google-services.json
+GoogleService-Info.plist
+key.properties
+*.jks
+*.keystore
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+.ipynb_checkpoints/
+
+# ---------- Flutter / Dart ----------
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+mobile/android/.gradle/
+mobile/android/local.properties
+mobile/ios/Pods/
+mobile/ios/.symlinks/
+mobile/ios/Flutter/Generated.xcconfig
+mobile/ios/Flutter/flutter_export_environment.sh
+
+# ---------- Node / web ----------
+node_modules/
+dist/
+.next/
+.vite/
+coverage/
+
+# ---------- OS / editors ----------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp

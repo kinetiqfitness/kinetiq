@@ -1,0 +1,32 @@
+name: Task
+description: A unit of work that becomes one branch and one PR
+labels: ["task"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [cv, mobile, backend, web, shared, docs]
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: What needs to be done
+      description: Keep it small enough to finish in under 5 days.
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: Done when
+      placeholder: |
+        - [ ] ...
+        - [ ] ...
+    validations:
+      required: true
+  - type: input
+    id: block
+    attributes:
+      label: Roadmap block
+      placeholder: "Block 1"

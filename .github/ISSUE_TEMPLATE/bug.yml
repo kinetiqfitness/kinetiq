@@ -1,0 +1,22 @@
+name: Bug
+description: Something is broken
+labels: ["bug"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [cv, mobile, backend, web, shared]
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened vs. what you expected
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Device, exercise, clip name (link to Drive, don't upload the video here)

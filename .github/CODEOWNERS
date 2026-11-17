@@ -1,0 +1,16 @@
+# Code owners for kinetiqfitness. Last matching rule wins.
+
+# Default: anything not matched below goes to the project lead
+*               @Demerdashh
+
+/cv/            @kinetiqfitness/ai
+/mobile/        @kinetiqfitness/mobile
+/backend/       @kinetiqfitness/backend
+/web/           @kinetiqfitness/web
+
+# Contracts between teams: every team that uses them reviews
+/shared/        @kinetiqfitness/ai @kinetiqfitness/backend @kinetiqfitness/mobile
+
+# Process and decisions
+/docs/adr/      @Demerdashh
+/.github/       @Demerdashh
